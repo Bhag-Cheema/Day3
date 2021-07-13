@@ -23,7 +23,7 @@ export default class AddBook extends Component {
         return (
             <div>
                <div className="mb-3">
-                <label for="exampleFormControlInput1" className="form-label">Title</label>
+                <label className="form-label">Title</label>
                 <input 
                     value = {this.state.title}
                     onChange = {(e) => this.setState({ title: e.target.value})}
@@ -31,7 +31,7 @@ export default class AddBook extends Component {
                 </div>
 
                 <div className="mb-3">
-                <label for="exampleFormControlInput1" className="form-label">Author</label>
+                <label className="form-label">Author</label>
                 <input 
                     value = {this.state.author}
                     onChange = {(e) => this.setState({ author: e.target.value})}
@@ -39,7 +39,7 @@ export default class AddBook extends Component {
                 </div>
 
                 <div className="mb-3">
-                <label for="exampleFormControlInput1" className="form-label">ISBN#</label>
+                <label className="form-label">ISBN#</label>
                 <input 
                     value = {this.state.isbn}
                     onChange = {(e) => this.setState({ isbn: e.target.value})}
