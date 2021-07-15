@@ -20,7 +20,11 @@ export default class BookTable extends Component {
                             <th> {book.title}</th>
                             <td> {book.author}</td>
                             <td> {book.isbn}</td>
-                            <td></td>
+                            <td><div className="trash"
+                    onClick={() => this.props.removeBook(book.id)}>
+                      <u>X</u>
+                    </div>
+                    </td>
                             </tr>
                         })
                     }
